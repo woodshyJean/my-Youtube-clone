@@ -1,0 +1,46 @@
+.nav-container{
+    background-color: rgba(33, 33, 33, 0.98);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:white;
+    font-family:'Roboto', sans-serif;
+    padding-bottom: 4px;
+    font-size: 16px;
+    max-height:3.5rem;
+    width:100vw;
+    z-index: 1;
+}
+
+.far-left, .far-right{
+    display:inherit;
+    align-items: center;
+}
+
+
+.middle{
+    display: inherit;
+    align-items: center;
+    flex-grow: 1;
+    max-width: 43rem;
+}
+
+.logo{
+    display: inherit;
+    align-items: center;
+    z-index: 1;
+}
+
+.youtube-name{
+    font-size: medium;
+    padding-right: 50px;
+}
+
+.logo-background{
+    position:absolute;
+    left:65px;
+    background-color: white;
+    width: 16px;
+    height: 16px;
+    z-index: -1;
+}

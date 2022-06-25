@@ -1,0 +1,28 @@
+.about-container{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    max-width: 240px;
+    background-color: rgba(33, 33, 33, 0.98);
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    padding: 16px;
+}
+
+.about-text{
+    color:grey;
+    line-height: 20px;
+}
+
+.about-text:hover{
+    color:white;
+}
+
+.git-link:hover{
+    color: #FF9A8E;
+}
+
+.git-link{
+    text-decoration-color: #FF9A8E;
+    text-decoration-style:wavy;
+}

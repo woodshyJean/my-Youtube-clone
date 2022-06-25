@@ -1,0 +1,16 @@
+.usercontrols-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 240px;
+    background-color: rgba(33, 33, 33, 0.98);
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.usercontrols-icons{
+    color:white;
+    padding-right: 16px ;
+    padding-left: 8px;
+}

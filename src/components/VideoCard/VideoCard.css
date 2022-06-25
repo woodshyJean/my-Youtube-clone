@@ -1,0 +1,65 @@
+.videoCard-container{
+    display: flex;
+    flex-direction: column;
+    max-width:360px;
+}
+
+.video-info-container{
+    height: 120px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.video-info{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin:12px 0px 0px 0px;
+    gap:5px;
+}
+
+.video-thumb{
+    width: 360px;
+}
+
+.user-prof-photo-container{
+    display: flex;
+    justify-content: center;
+}
+
+.user-prof-photo{
+    height:36px;
+    width: 36px;
+    border-radius: 100%;
+    margin:12px 12px 0px 0px;
+}
+
+.video-analytics{
+    display: flex;
+    flex-direction: row;
+}
+
+.video-title, .video-user, .video-views, .video-date{
+    font-family: "Roboto","Arial",sans-serif;
+}
+
+.video-user, .video-views, .video-date{
+    width: fit-content;
+    color:#aaaa;
+    font-size: 16px;
+}
+
+.video-title{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    max-height: 40px;
+    overflow: hidden;
+}
+
+.video-views{
+    padding-right: 4px;
+}
+.video-user:hover{
+    color:white;
+}

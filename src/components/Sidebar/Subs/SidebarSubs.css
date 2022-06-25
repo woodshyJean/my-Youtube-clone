@@ -1,0 +1,12 @@
+.sidebarSubs-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+.sidebarSubs-icons{
+    color:white;
+    padding-right: 16px ;
+    padding-left: 8px;
+}

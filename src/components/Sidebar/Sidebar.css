@@ -1,0 +1,26 @@
+.sidebar-container{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    min-width: fit-content;
+    font-size: 16px;
+    background-color: rgba(33, 33, 33, 0.98);
+    overflow-y: scroll;
+    scrollbar-width:thin;
+}
+
+.sidebar-container::-webkit-scrollbar{
+    width:5px;
+}
+
+.sidebar-container::-webkit-scrollbar-thumb{
+    background-color: grey;
+}
+
+.sidebar-seperator{
+    width:90%;
+    border: none;
+    height:1px;
+    background-color: #3c3f43;
+    margin:16px 0px;
+}
