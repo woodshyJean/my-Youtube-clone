@@ -20,6 +20,9 @@ export default function About(){
             <p className="about-text">
                 First save: 6/25/2022 created basic UI | Created Mock data | Videos play on mouseEnter 
             </p>
+            <p className="about-text">
+                Sirst save: 6/26/2022 added an "ok" search feature | created youtube search result card | attempting to figure out how to route 
+            </p>
             <a className="git-link" href="https://github.com/woodshyJean">
                 <p className="about-text git-link">
                 By: Woodshy Jean
