@@ -9,22 +9,22 @@ import "./More.css"
 export default function More(){
     return (
         <div className="morebtns-container">
-            <IconButton>
+            <IconButton style={{justifyContent:"start", minWidth:"200px"}}>
                 <LocalMoviesOutlinedIcon className="morebtns-icons"/>
                 <p>Movies & shows</p>
             </IconButton>
 
-            <IconButton>
+            <IconButton style={{justifyContent:"start", minWidth:"200px"}}>
                 <SportsEsportsOutlinedIcon className="morebtns-icons"/>
                 <p>Gaming</p>
             </IconButton>
 
-            <IconButton>
+            <IconButton style={{justifyContent:"start", minWidth:"200px"}}>
                 <SettingsInputAntennaOutlinedIcon className="morebtns-icons"/>
                 <p>Live</p>
             </IconButton>
 
-            <IconButton>
+            <IconButton style={{justifyContent:"start", minWidth:"200px"}}>
                 <EmojiEventsOutlinedIcon className="morebtns-icons"/>
                 <p>Sports</p>
             </IconButton>

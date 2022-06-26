@@ -10,40 +10,7 @@ export default function Main(props){
 
     //console.log(props)
 
-    const [data, setData] = React.useState(VideoData)
-
-    
-    function handleAutoplay(event){
-        console.log(event)
-        console.log(event.target.id)
-        //const dateNow = new Date()
-        //const dateLater = +new Date() +2000
-        //
-        //console.log(new Date(dateNow), new Date(dateLater));
-        //const found = data.find(element => {
-        //    return element.key === +event.target.id
-        //})
-        //console.log(found)
-        //let test = event.target.classList.toString()
-
-        //setData((prev) => {
-        //    return [
-        //        ...prev,
-        //    ]
-        //})
-
-        //console.log(test)
-        //console.log(document.querySelector(`.${test}`))
-        if(event){
-            document.getElementById(event.target.id).play()
-        }
-    }
-
-    function handleStopAutoplay(event){
-        if(event){
-            document.getElementById(event.target.id).pause()
-        }
-    }
+    const [data, setData] = React.useState(VideoData.data)
 
     const VideoRender = data.map((data) => {
         return <VideoCard
@@ -54,8 +21,8 @@ export default function Main(props){
           user={data.user}
           views={data.views}
           date={data.uploadDate}
-          handleAutoplay={handleAutoplay}
-          handleStopAutoplay={handleStopAutoplay}
+          handleAutoplay={props.play}
+          handleStopAutoplay={props.stop}
           control={data.videocontrols}
           autoplay={data.autoplay}
           vidkey={data.key}

@@ -9,22 +9,22 @@ import "./Homebtns.css"
 export default function HomeBtns(){
     return (
         <div className="homebtns-container">
-            <IconButton className="homebtn-btns">
+            <IconButton style={{justifyContent:"start", minWidth:"200px"}} className="homebtn-btns">
                 <HomeOutlinedIcon className="homebtn-icons"/>
                 <p>Home</p>
             </IconButton>
 
-            <IconButton className="homebtn-btns">
+            <IconButton style={{justifyContent:"start", minWidth:"200px"}} className="homebtn-btns">
                 <ExploreOutlinedIcon className="homebtn-icons"/>
                 <p>Explore</p>
             </IconButton>
 
-            <IconButton className="homebtn-btns">
+            <IconButton style={{justifyContent:"start", minWidth:"200px"}} className="homebtn-btns">
                 <SubscriptionsOutlinedIcon className="homebtn-icons"/>
                 <p>Shorts</p>
             </IconButton>
 
-            <IconButton className="homebtn-btns">
+            <IconButton style={{justifyContent:"start", minWidth:"200px"}} className="homebtn-btns">
                 <VideoLibraryOutlinedIcon className="homebtn-icons"/>
                 <p>Subscriptions</p>
             </IconButton>

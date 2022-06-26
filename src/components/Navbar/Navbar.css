@@ -29,6 +29,8 @@
     display: inherit;
     align-items: center;
     z-index: 1;
+    color:white;
+    text-decoration: none;
 }
 
 .youtube-name{

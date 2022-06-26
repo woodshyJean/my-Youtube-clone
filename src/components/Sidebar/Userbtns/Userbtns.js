@@ -13,33 +13,33 @@ import "./Userbtns.css"
 export default function Userbtns(){
     return (
         <div className="userbtn-container">
-            <IconButton className="userbtn-btns">
+            <IconButton style={{justifyContent:"start", minWidth:"200px"}} className="userbtn-btns">
                 <VideoLibraryOutlinedIcon className="userbtn-icons"/>
                 <p>Library</p>
             </IconButton>
 
-            <IconButton>
+            <IconButton style={{justifyContent:"start", minWidth:"200px"}}>
                 <HistoryOutlinedIcon className="userbtn-icons"/>
                 <p>History</p>
             </IconButton>
 
-            <IconButton>
+            <IconButton style={{justifyContent:"start", minWidth:"200px"}}>
                 <PlayCircleFilledWhiteOutlinedIcon className="userbtn-icons"/>
                 <p>Your videos</p>
             </IconButton>
 
-            <IconButton>
+            <IconButton style={{justifyContent:"start", minWidth:"200px"}}>
                 <WatchLaterOutlinedIcon className="userbtn-icons"/>
                 <p>Watch later</p>
             </IconButton>
 
-            <IconButton>
+            <IconButton style={{justifyContent:"start", minWidth:"200px"}}>
                 <ThumbUpOutlinedIcon className="userbtn-icons"/>
                 <p>Liked videos</p>
             </IconButton>
 
             <div className="userbtns-showMore">
-                <IconButton>
+                <IconButton style={{justifyContent:"start", minWidth:"200px"}}>
                     <KeyboardArrowDownOutlinedIcon className="userbtn-icons"/>
                     <p>Show more</p>
                 </IconButton>

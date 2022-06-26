@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useEffect, useState} from "react";
 import { TextField, InputAdornment, IconButton, } from "@mui/material";
+import  {Link} from "react-router-dom"
 import MenuIcon from '@mui/icons-material/Menu';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import SearchIcon from '@mui/icons-material/Search';
@@ -11,7 +12,8 @@ import AccountCircleSharpIcon from '@mui/icons-material/AccountCircleSharp';
 import './Navbar.css';
 
 export default function Navbar(props){
-    console.log(props)
+
+    //console.log(props)
     return (
         <div className={`nav-container ${props.classN}`}>
 
@@ -22,7 +24,8 @@ export default function Navbar(props){
                         sx={{ fontSize: 24 }}
                     />
                 </IconButton>
-                <div className="logo">
+
+                <Link to="/" className="logo">
                     <YouTubeIcon 
                     color={'error'}
                     sx={{ fontSize: 35, color:"red"}}
@@ -31,22 +34,25 @@ export default function Navbar(props){
                     <h1 className="youtube-name">
                         YouTube
                     </h1>
-                </div>
+                </Link>
             </div>
 
 
-            <div className="middle">
-                <TextField 
+            <form id="searchForm" className="middle" onSubmit={props.submit}>
+                <TextField
+                type={"text"}
+                name={"searchBar"}
+                onChange={props.getSearch} 
                 fullWidth
-                id="outlined-basic" 
+                id="searchBar" 
                 placeholder="Search"
                 variant="outlined"
                 size="small"
                 style={{ backgroundColor: "hsl(0, 0%, 7%)" }}
                 sx={{ input: { color: "white" }, "label": {color: "white"} }} 
                 InputProps={{
-                    endAdornment: <InputAdornment position="end"> 
-                        <IconButton>
+                    endAdornment: <InputAdornment position="end">
+                        <IconButton onClick={props.click} id="searchButton" type="submit">
                         <SearchIcon
                             style={{ color: 'white' }}
                         />
@@ -59,7 +65,8 @@ export default function Navbar(props){
                         style={{ color: 'white' }}
                     />
                 </IconButton>
-            </div>
+            </form>
+
 
             <div className="far-right">
                 <IconButton >
@@ -95,3 +102,49 @@ export default function Navbar(props){
     )
 
 }
+
+
+
+
+
+
+
+
+
+
+    //console.log(props)
+//
+    //const [searchTerm, setSearchTerm] = useState("")
+    //const [searchMatch, setSearchMatch] = useState([])
+    //const results = Array.from(new Set(searchMatch))
+//
+    //function getSearchTerm(event){
+    //    //console.log(event.target.value)
+    //    setSearchTerm(event.target.value)
+    //}
+//
+    //function handleSubmit(event){
+    //    event.preventDefault();
+    //    setSearchMatch([])
+    //    let tArr = searchTerm.split(' ').reduce((a, v) => ({ ...a ,[v]: true}), {} )
+    //    props.data.filter((vid) => {  
+    //        vid.keyWords.forEach((el, i) => {
+    //            if(!tArr[el]){
+    //                return
+    //             }
+//
+    //            if(tArr[el]){
+    //            setSearchMatch((prev) => {
+    //                return [
+    //                    ...prev,
+    //                    vid
+    //                    ]
+    //                })
+    //            }
+    //        })
+    //    
+    //    })
+    //}
+    ////console.log(searchMatch)
+    ////console.log(Array.from(new Set(searchMatch)))
+    //console.log(results)

@@ -9,7 +9,7 @@ import About from "./About/About";
 import "./Sidebar.css"
 
 export default function Sidebar(props){
-    console.log(props)
+    //console.log(props)
     return (
         <div className={`sidebar-container ${props.classN}`}>
             <HomeBtns/>
