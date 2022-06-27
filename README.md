@@ -12,3 +12,5 @@ First save: 6/25/2022 created basic UI | Created Mock data | Videos play on mous
 
 Second save: 6/26/2022 added an "ok" search feature | created youtube search result card | attempting to figure out how to route | 
 to be able to search for now you must add /search to the end of the url
+
+Third save: 6/27/2022 used conditional rendering to show search result component
