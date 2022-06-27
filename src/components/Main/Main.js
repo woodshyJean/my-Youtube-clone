@@ -1,7 +1,8 @@
-import React, {useEffect} from "react";
+import React from "react";
 
 import VideoCard from "../VideoCard/VideoCard";
-import VideoData from "../../MockData/Data";
+import SearchVideo from "../../Pages/Search/SearchVideo/SearchVideo";
+//import VideoData from "../../MockData/Data";
 
 import "./Main.css"
 
@@ -10,9 +11,7 @@ export default function Main(props){
 
     //console.log(props)
 
-    const [data, setData] = React.useState(VideoData.data)
-
-    const VideoRender = data.map((data) => {
+    const VideoRender = props.data.map((data) => {
         return <VideoCard
       
           src={data.video}
@@ -31,10 +30,25 @@ export default function Main(props){
         
     })
 
+    const test2 = props.results.map((info) => {
+        //console.log(info)
+        return (
+            <SearchVideo 
+            data={info}
+            play={props.play}
+            stop={props.stop}
+            />
+        )
+    })
+
+
+
+    //console.log(test2)
+
 
     return (
         <div className={`main-container ${props.classN}`}>
-            {VideoRender}
+            {props.page.main ? VideoRender  : test2}
         </div>
     )
 }

@@ -26,3 +26,96 @@ function handleAutoplay(event){
           document.getElementById(event.target.id).pause()
       }
   }
+
+
+
+
+
+
+
+      //console.log(props)
+    //const [searchTerm, setSearchTerm] = useState("")
+    //const [searchMatch, setSearchMatch] = useState([])
+//
+    //const results = Array.from(new Set(searchMatch))
+//
+    //useEffect(() => {
+    //    const searchBtn = document.getElementById("searchButton")
+    //    searchBtn.addEventListener('click', (e) => {
+    //        e.preventDefault();
+    //        let searchTerm = document.getElementById("searchBar").value
+    //        setSearchTerm(searchTerm.toLowerCase())
+    //        console.log("clicked")
+    //    })
+    //})
+//
+    //function getMatches(){
+    //    setSearchMatch([]);
+    //    let resultsObj = searchTerm.split(' ').reduce((a, v) => ({ ...a ,[v]: true}), {} ); 
+    //    VideoData.data.filter((vid) => { 
+    //        vid.keyWords.forEach((el) => {
+    //            if(!resultsObj[el.toLowerCase()]){
+    //                return
+    //             }
+    //            if(resultsObj[el.toLowerCase()]){
+    //            setSearchMatch((prev) => {
+    //                return [
+    //                    ...prev,
+    //                    vid
+    //                    ]
+    //                })
+    //            }
+    //        })
+    //      
+    //    })
+    //}
+
+    //const test = results.map((info) => {
+    //    //console.log(info)
+    //    return (
+    //        <SearchVideo 
+    //        data={info}
+    //        play={props.play}
+    //        stop={props.stop}
+    //        />
+    //    )
+    //})
+
+
+
+        //console.log(props)
+//
+    //const [searchTerm, setSearchTerm] = useState("")
+    //const [searchMatch, setSearchMatch] = useState([])
+    //const results = Array.from(new Set(searchMatch))
+//
+    //function getSearchTerm(event){
+    //    //console.log(event.target.value)
+    //    setSearchTerm(event.target.value)
+    //}
+//
+    //function handleSubmit(event){
+    //    event.preventDefault();
+    //    setSearchMatch([])
+    //    let tArr = searchTerm.split(' ').reduce((a, v) => ({ ...a ,[v]: true}), {} )
+    //    props.data.filter((vid) => {  
+    //        vid.keyWords.forEach((el, i) => {
+    //            if(!tArr[el]){
+    //                return
+    //             }
+//
+    //            if(tArr[el]){
+    //            setSearchMatch((prev) => {
+    //                return [
+    //                    ...prev,
+    //                    vid
+    //                    ]
+    //                })
+    //            }
+    //        })
+    //    
+    //    })
+    //}
+    ////console.log(searchMatch)
+    ////console.log(Array.from(new Set(searchMatch)))
+    //console.log(results)

@@ -15,6 +15,7 @@
 .far-left, .far-right{
     display:inherit;
     align-items: center;
+    text-decoration: none;
 }
 
 
@@ -36,6 +37,7 @@
 .youtube-name{
     font-size: medium;
     padding-right: 50px;
+    color:white;
 }
 
 .logo-background{
