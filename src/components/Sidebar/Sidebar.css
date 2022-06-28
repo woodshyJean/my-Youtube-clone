@@ -19,8 +19,8 @@
 
 .sidebar-seperator{
     width:90%;
-    border: none;
-    height:1px;
-    background-color: #3c3f43;
+    border-style: solid none none none ;
+    border-color:  #3c3f43 ;
+    border-width: .2px;
     margin:16px 0px;
 }
