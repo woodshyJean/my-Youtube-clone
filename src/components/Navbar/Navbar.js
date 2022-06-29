@@ -17,7 +17,7 @@ export default function Navbar(props){
         <div className={`nav-container ${props.classN}`}>
 
             <div className="far-left">
-                <IconButton  style={{padding:'16px'}}>
+                <IconButton  style={{padding:'16px',}} className="far-left-menu">
                     <MenuIcon
                         style={{ color: 'white'}}
                         sx={{ fontSize: 24 }}
@@ -64,7 +64,7 @@ export default function Navbar(props){
                             </InputAdornment>,
                 }}
                  />
-                <IconButton >
+                <IconButton className="far-right-voice" >
                     <KeyboardVoiceIcon
                         style={{ color: 'white' }}
                     />
@@ -73,14 +73,14 @@ export default function Navbar(props){
 
 
             <div className="far-right">
-                <IconButton >
+                <IconButton className="far-right-camera">
                    <VideoCameraFrontOutlinedIcon
                         style={{ color: 'white' }}
                    />
                 </IconButton>
                 
 
-                <IconButton >
+                <IconButton className="far-right-grid">
                    <GridViewOutlinedIcon
                         style={{ color: 'white' }}
                         sx={{ fontSize: 24 }}
@@ -88,7 +88,7 @@ export default function Navbar(props){
                 </IconButton>
                 
 
-                <IconButton >
+                <IconButton className="far-right-bell" >
                    <NotificationsNoneOutlinedIcon
                         style={{ color: 'white' }}
                    />

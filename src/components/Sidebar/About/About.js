@@ -27,6 +27,9 @@ export default function About(){
             <p className="about-text">
                 Third save: 6/27/2022 used conditional rendering to show search result component
             </p>
+            <p className="about-text">
+                4th save: 6/29/2022 changed scrollbar styles | added onclick to show more playlist and show more subscribers 
+            </p>
             <a className="git-link" href="https://github.com/woodshyJean">
                 <p className="about-text git-link">
                 By: Woodshy Jean
