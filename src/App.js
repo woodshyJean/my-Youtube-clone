@@ -69,16 +69,12 @@ function App() {
     //console.log(results)
 
   return (
-    <div className="App">
       
       <Routes>
         <Route path='/' element={<HomeLayout play={handleAutoplay} stop={handleStopAutoplay} data={VideoData} click={plz} results={results} page={page}/>}>
         </Route>
       </Routes>
 
-
-
-    </div>
   );
 }
 
@@ -101,11 +97,16 @@ function HomeLayout(props){
 
 
 
+      <div className="App">
+        <div className='nav'>
+          <Navbar classN={""} root={props.root} plz={props.plz} click={props.click} home={props.home}/>
+        </div>
 
-
-      <Navbar classN={'nav'} root={props.root} plz={props.plz} click={props.click} home={props.home}/>
-      <Sidebar classN={'side'}/>
-      <Main classN={'main'} play={props.play} stop={props.stop} data={props.data.data} results={props.results} page={props.page} setPage={props.setPage} />
+        <div className='test'>
+          <Sidebar classN=""/>
+          <Main classN="" play={props.play} stop={props.stop} data={props.data.data} results={props.results} page={props.page} setPage={props.setPage} />
+        </div>
+      </div>
     </>
   )
 }

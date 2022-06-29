@@ -14,3 +14,5 @@ Second save: 6/26/2022 added an "ok" search feature | created youtube search res
 to be able to search for now you must add /search to the end of the url
 
 Third save: 6/27/2022 used conditional rendering to show search result component
+
+4th save: 6/29/2022 changed scrollbar styles | added onclick to show more playlist and show more subscribers | made the page mobile responsive
