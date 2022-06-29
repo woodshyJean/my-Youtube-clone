@@ -3,6 +3,8 @@ import "./SearchVideo.css"
 
 export default function SearchVideo(props){
 
+    console.log(props)
+
     return (
         <div className="xyz">
             <div className="searchVideo-container">

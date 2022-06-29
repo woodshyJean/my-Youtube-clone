@@ -50,7 +50,7 @@ export default function Navbar(props){
                 size="small"
                 style={{ backgroundColor: "hsl(0, 0%, 7%)" }}
                 sx={{ input: { color: "white" }, "label": {color: "white"} }} 
-                InputProps={{
+                InputProps={{ shrink:true ,
                     endAdornment: 
                             <InputAdornment position="end" style={{height:"fit-content" , }} id="searchButton" > 
                                 <IconButton  type="submit"  >

@@ -9,22 +9,22 @@ import "./Homebtns.css"
 export default function HomeBtns(){
     return (
         <div className="homebtns-container">
-            <IconButton style={{justifyContent:"start", minWidth:"200px"}} className="homebtn-btns">
+            <IconButton disableRipple style={{justifyContent:"start", minWidth:"200px" , borderRadius:"0%"}} className="homebtn-btns btn">
                 <HomeOutlinedIcon className="homebtn-icons"/>
                 <p>Home</p>
             </IconButton>
 
-            <IconButton style={{justifyContent:"start", minWidth:"200px"}} className="homebtn-btns">
+            <IconButton disableRipple style={{justifyContent:"start", minWidth:"200px" , borderRadius:"0%"}} className="homebtn-btns btn">
                 <ExploreOutlinedIcon className="homebtn-icons"/>
                 <p>Explore</p>
             </IconButton>
 
-            <IconButton style={{justifyContent:"start", minWidth:"200px"}} className="homebtn-btns">
+            <IconButton disableRipple style={{justifyContent:"start", minWidth:"200px" , borderRadius:"0%"}} className="homebtn-btns btn">
                 <SubscriptionsOutlinedIcon className="homebtn-icons"/>
                 <p>Shorts</p>
             </IconButton>
 
-            <IconButton style={{justifyContent:"start", minWidth:"200px"}} className="homebtn-btns">
+            <IconButton disableRipple style={{justifyContent:"start", minWidth:"200px" , borderRadius:"0%"}} className="homebtn-btns btn">
                 <VideoLibraryOutlinedIcon className="homebtn-icons"/>
                 <p>Subscriptions</p>
             </IconButton>

@@ -5,6 +5,7 @@ import Main from './components/Main/Main';
 import {Routes, Route, Link} from "react-router-dom"
 import React, {useState} from "react";
 import VideoData from './MockData/Data';
+import { Grid, ListItem} from '@mui/material';
 
 function App() {
 
@@ -37,8 +38,8 @@ function App() {
     const plz = function(e){
         e.preventDefault();
         setSearchMatch([]);
-        let searchTerm = document.getElementById("searchBar").value
-        setSearchTerm(searchTerm.toLowerCase())
+        let searchTerm = document.getElementById("searchBar").value.toLowerCase()
+        setSearchTerm(searchTerm)
         let resultsObj = searchTerm.split(' ').reduce((a, v) => ({ ...a ,[v]: true}), {} );
         VideoData.data.filter((vid) => { 
           vid.keyWords.forEach((el) => {
@@ -85,6 +86,23 @@ function HomeLayout(props){
   //console.log(props)
   return (
     <>
+
+      {/*<Grid container rowSpacing={0} className="grid-container">
+        <Grid item xs={12}>
+          <Navbar  root={props.root} plz={props.plz} click={props.click} home={props.home}/>
+        </Grid>
+        <Grid item xs={1.47}>
+          <Sidebar />
+        </Grid>
+        <Grid item xs={10.53} className="main">
+          <Main  play={props.play} stop={props.stop} data={props.data.data} results={props.results} page={props.page} setPage={props.setPage} />
+        </Grid>
+  </Grid>*/}
+
+
+
+
+
       <Navbar classN={'nav'} root={props.root} plz={props.plz} click={props.click} home={props.home}/>
       <Sidebar classN={'side'}/>
       <Main classN={'main'} play={props.play} stop={props.stop} data={props.data.data} results={props.results} page={props.page} setPage={props.setPage} />

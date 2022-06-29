@@ -11,22 +11,22 @@ import "./UserControls.css"
 export default function UserControls(){
     return (
         <div className="usercontrols-container">
-            <IconButton style={{justifyContent:"start", minWidth:"200px"}}>
+            <IconButton disableRipple style={{justifyContent:"start", minWidth:"200px" , borderRadius:"0%"}} className="btn">
                 <SettingsOutlinedIcon className="usercontrols-icons"/>
                 <p>Settings</p>
             </IconButton>
 
-            <IconButton style={{justifyContent:"start", minWidth:"200px"}} className="userbtn-btns">
+            <IconButton disableRipple style={{justifyContent:"start", minWidth:"200px" , borderRadius:"0%"}} className="userbtn-btns btn">
                 <FlagOutlinedIcon className="usercontrols-icons"/>
                 <p>Report history</p>
             </IconButton>
 
-            <IconButton style={{justifyContent:"start", minWidth:"200px"}}className="userbtn-btns">
+            <IconButton disableRipple style={{justifyContent:"start", minWidth:"200px" , borderRadius:"0%"}} className="userbtn-btns btn">
                 <HelpOutlineOutlinedIcon className="usercontrols-icons"/>
                 <p>Help</p>
             </IconButton>
 
-            <IconButton style={{justifyContent:"start", minWidth:"200px"}} className="userbtn-btns">
+            <IconButton disableRipple style={{justifyContent:"start", minWidth:"200px" , borderRadius:"0%"}} className="userbtn-btns btn">
                 <FeedbackOutlinedIcon className="usercontrols-icons"/>
                 <p>Send feedback</p>
             </IconButton>
