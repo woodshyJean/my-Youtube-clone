@@ -1,0 +1,4 @@
+.showmore-playlist-container{
+   display: flex;
+   flex-direction: column;
+}

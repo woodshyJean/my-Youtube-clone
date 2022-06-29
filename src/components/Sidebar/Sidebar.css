@@ -10,11 +10,12 @@
 }
 
 .sidebar-container::-webkit-scrollbar{
-    width:5px;
+    width:8px;
 }
 
 .sidebar-container::-webkit-scrollbar-thumb{
     background-color: grey;
+    border-radius: 5px;
 }
 
 .sidebar-seperator{
@@ -24,3 +25,9 @@
     border-width: .2px;
     margin:16px 0px;
 }
+
+.btn:hover{
+    background-color:#383838 ;
+    border-radius: 0%;
+}
+

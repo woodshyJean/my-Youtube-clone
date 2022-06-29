@@ -1,6 +1,9 @@
 
 .xyz{
     display: flex;
+    flex-direction: row;
+    font-size: 16px;
+    width:100%;
     padding:0px 12rem;
     max-height: 203px;
 }
@@ -77,6 +80,7 @@
     font-size: 18px;
     line-height: 22px;
     max-height: 40px;
+    /*max-width: 40ch;*/
     padding-bottom: .25rem;
     overflow: hidden;
 }

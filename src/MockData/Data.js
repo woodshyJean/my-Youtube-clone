@@ -152,7 +152,7 @@ const VideoData = {
                             videocontrols:false,
                             autoplay:false,
                             key:11,
-                            keyWords:['kayaking', "woman", "Halong"]
+                            keyWords:['kayaking', "woman", "Halong", "bay"]
                         
                         },
                     
@@ -166,7 +166,7 @@ const VideoData = {
                             videocontrols:false,
                             autoplay:false,
                             key:12,
-                            keyWords:['giraffes', "bush", "sunset"]
+                            keyWords:['giraffes', "bush", "sunset", "african"]
 
                         },
                     

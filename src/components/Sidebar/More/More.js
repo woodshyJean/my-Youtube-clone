@@ -9,22 +9,22 @@ import "./More.css"
 export default function More(){
     return (
         <div className="morebtns-container">
-            <IconButton style={{justifyContent:"start", minWidth:"200px"}}>
+            <IconButton disableRipple style={{justifyContent:"start", minWidth:"200px" , borderRadius:"0%"}} className="morebtns-icons btn" >
                 <LocalMoviesOutlinedIcon className="morebtns-icons"/>
                 <p>Movies & shows</p>
             </IconButton>
 
-            <IconButton style={{justifyContent:"start", minWidth:"200px"}}>
+            <IconButton disableRipple style={{justifyContent:"start", minWidth:"200px" , borderRadius:"0%"}} className="btn">
                 <SportsEsportsOutlinedIcon className="morebtns-icons"/>
                 <p>Gaming</p>
             </IconButton>
 
-            <IconButton style={{justifyContent:"start", minWidth:"200px"}}>
+            <IconButton disableRipple style={{justifyContent:"start", minWidth:"200px" , borderRadius:"0%"}} className="btn">
                 <SettingsInputAntennaOutlinedIcon className="morebtns-icons"/>
                 <p>Live</p>
             </IconButton>
 
-            <IconButton style={{justifyContent:"start", minWidth:"200px"}}>
+            <IconButton disableRipple style={{justifyContent:"start", minWidth:"200px" , borderRadius:"0%"}} className="btn">
                 <EmojiEventsOutlinedIcon className="morebtns-icons"/>
                 <p>Sports</p>
             </IconButton>

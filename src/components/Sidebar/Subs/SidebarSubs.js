@@ -1,15 +1,17 @@
 import React from "react";
 import {IconButton} from "@mui/material";
 import KeyboardArrowDownOutlinedIcon from '@mui/icons-material/KeyboardArrowDownOutlined';
+import ShowMore from "../ShowMore/ShowMore";
 import "./SidebarSubs.css"
+import PlaylistPlayIcon from '@mui/icons-material/PlaylistPlay';
 
 export default function SidebarSubs(){
+
     return (
         <div className="sidebarSubs-container">
-            <IconButton style={{justifyContent:"start", minWidth:"200px"}}>
-                <KeyboardArrowDownOutlinedIcon className="sidebarSubs-icons"/>
-                <p>Show 0 more</p>
-            </IconButton>
+            <ShowMore
+                text={`Show 0 more`}
+            />
         </div>
     )
 }
