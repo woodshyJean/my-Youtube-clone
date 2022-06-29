@@ -147,6 +147,7 @@
     }
     
     .searchVideo-container{
+        max-height: 90px;
         min-width: 369px;
         gap: 8px;
     }
