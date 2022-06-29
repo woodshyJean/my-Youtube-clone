@@ -26,8 +26,8 @@
 @media only screen and (max-width: 600px) {
     .main-container{
         flex-direction: row;
-        padding:3rem 0px;
-        min-width: fit-content;
+        padding:1rem 0px;
+        min-width: 369px;
         min-height: fit-content;
     }
 }
